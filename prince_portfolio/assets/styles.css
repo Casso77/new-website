@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+:root {
+  --primary: #d0bcff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(14, 14, 14);
+}
+
+main {
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.left-padding {
+    padding-left: 5rem;
+}
+
+.selected {
+  background-color: rgba(137, 43, 226, 0.2);
+  color: blueviolet;
+  font-weight: bold;
+}
+
+/* hero section */
+
+.hero-wrapper {
+  padding: 12rem 0;
+  flex-direction: column;
+}
+
+.hero-text {
+  color: rgba(240, 248, 255, 0.7);
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+.me {
+  font-family: "Kanit", sans-serif;
+  color: blueviolet;
+  font-size: 6.2rem;
+}
+
+.cta {
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.contact-me,
+.download {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.contact-me {
+  background-color: blueviolet;
+  color: aliceblue;
+  border-color: transparent;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.contact-me:hover {
+  background-color: rgb(76, 19, 129);
+  color: aliceblue;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.download {
+  border: 1px solid blueviolet;
+  background-color: transparent;
+  color: aliceblue;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.download:hover {
+  border: 1px solid aliceblue;
+  background-color: aliceblue;
+  color: blueviolet;
+}
+
+.section-wrapper {
+  padding: 6rem 0;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.gray {
+  background-color: rgb(14, 14, 14);
+}
+
+hr {
+  border: 1px solid rgba(137, 43, 226, 0.1);
+  margin: 3rem;
+  /* margin-bottom: 5rem; */
+}
+
+#about {
+  width: 80%;
+  color: rgba(240, 248, 255, 0.7);
+  gap: 4rem;
+}
+
+.size {
+  font-size: 2.8rem;
+}
+
+.about-me-content {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.about-me-content a {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: rgb(228, 228, 53);
+}
+
+.about-me-content a:hover {
+  color: rgb(228, 228, 53);
+  text-decoration: underline;
+}
+
+#projects {
+  width: 80%;
+  color: rgba(240, 248, 255, 0.7);
+  gap: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 4rem;
+  /*  */
+}
+
+/* @media only screen and (max-width:760px) {
+    .grid{
+        grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    }
+} */
+
+.project-item {
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.project-item-image {
+  width: 500px;
+  height: 300px;
+}
+
+.qacc {
+  background-image: url(/images/qacc_blog.png);
+  background-size: cover;
+}
+
+.qms {
+  background-image: url(/images/QMS.png);
+  background-size: cover;
+}
+
+.contact-wrapper {
+  padding: 4rem 0;
+}
+
+#contact {
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  gap: 2rem;
+}
+
+/* .send-img {
+  position: absolute;
+  width: 34%;
+  left: 56rem;
+} */
+
+.contact-img {
+  background-image: url(/images/send-message.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  width: 50%;
+}
+
+.contact-header {
+  color: blueviolet;
+  font-size: 4rem;
+}
+
+.name-input,
+.message-input {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aliceblue {
+  color: aliceblue;
+}
+
+.submit-btn {
+  background-color: blueviolet;
+  color: aliceblue;
+  border-color: transparent;
+  transition: 1s;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.submit-btn:hover {
+  background-color: rgb(76, 19, 129);
+  color: aliceblue;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.uname,
+.textarea {
+  padding: 1rem;
+}
+
+.textarea {
+  resize: none;
+}
+
+.contact-wrapper {
+  gap: 2rem;
+  margin-right: 3rem;
+}
+
+/* footer styles */
+
+footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.copy {
+  margin-bottom: 1rem;
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  footer {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1rem);
+  }
+}
+
+footer a {
+  color: rgb(228, 228, 53);
+}
+
+footer a:hover {
+  color: rgb(228, 228, 53);
+  text-decoration: underline;
+}
+
+footer i{
+    color: red;
+}
+
+/* blog styles */
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.blog-body{
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+}
+
+.coming-soon {
+    font-family: "Kanit", sans-serif;
+    color: blueviolet;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.blog-main{
+    position: fixed;
+    top: 30%;
+    left: 4%;
+
+
+    /* margin-top: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+}
+/* .gif{
+    width: 500px;
+    height: 500px;
+} */
+
+.gif-credit{
+    text-decoration: none;
+    color: rgb(228, 228, 53);
+    text-align: center;
+}
+
+.gif-credit:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Making things Responsive */
+
+@media only screen and (max-width: 760px) {
+    .me {
+      font-size: 2rem;
+    }
+  
+    .hero-text {
+      font-size: 1.5rem;
+      width: 90%;
+    }
+  
+    .contact-me,
+    .download {
+      padding: 1rem;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  
+    .left-padding {
+      padding-left: 2rem;
+    }
+
+    .size{
+        font-size: 1.5rem;
+    }
+
+    .about-me-content{
+        font-size: 1rem;
+    }
+
+    .about-me-content a{
+        font-size: 1rem;
+    }
+
+    #about, #projects{
+        flex-direction: column;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4rem;
+        margin-left: 2rem;
+    }
+
+    .section-wrapper{
+        padding: 3rem 0;
+    }
+
+    .contact-img{
+        display: none;
+    }
+
+    hr{
+        margin: 2rem;
+    }
+
+    .coming-soon {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .blog-main{
+        top: 20%;
+        left: 4%;
+    }
+  }
